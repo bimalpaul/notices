@@ -1,3 +1,18 @@
+# BPaul - Changes made so far
+* Added `bootstrap` for styling
+* Added `textTransformStatus` reducer to handle all statuses
+* Added `Toast` container and component that reads off of `textTransformStatus` state
+* Added `mode` to the transformText dispatches to keep track of transform mode
+* Disabled `Transform Text button` till something is entered
+* Hide `Transformed Text :` till there was something to be displayed
+* Toast components are animated to disappear after 5s. They also contain a cancel `x` button to clear it
+
+# BPaul - Wish list
+* Unit tests
+* Use Typescript :) 
+
+
+
 # Notices
 
 In this project, you'll design and implement an application-wide solution for user notifications. Ideally, you will utilize the existing Redux setup (and tweak it at your discretion) to achieve the desired result.
