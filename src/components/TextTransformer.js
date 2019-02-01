@@ -27,12 +27,12 @@ export default class TextTransformer extends Component {
         const { currentValue } = this.state
         const { transformedValue } = this.props
         return (
-            <div className="TextTransformer-container">
+            <div className="TextTransformer-container mt-4">
                 <form onSubmit={this.handleSubmit}>
                     <input value={currentValue} type="text" placeholder="Enter text to transform" onChange={this.handleChange} />
                     <button type="submit">Transform Text</button>
                 </form>
-                <p>Transformed Text: {transformedValue}</p>
+                <p className="mt-4">Transformed Text: {transformedValue}</p>
             </div>
         )
     }
