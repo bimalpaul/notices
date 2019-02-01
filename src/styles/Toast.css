@@ -1,0 +1,20 @@
+.transformToast {
+    position: fixed;
+    top: 90vh;
+    left: 2%;
+}
+
+.successToast {
+    background-color: green;
+    color: white;
+}
+
+.failureToast {
+    background-color: red;
+    color: white;
+}
+
+.loadingToast {
+    background-color: lightblue;
+    color: white;
+}
