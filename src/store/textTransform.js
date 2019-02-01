@@ -16,8 +16,8 @@ const transformText = (input, mode = LOWERCASE) => dispatch => {
 
     dispatch({ type: TRANSFORM_VALUE_LOAD })
     axios.post(endpoint, { input })
-        .then(res => dispatch({ type: TRANSFORM_VALUE_SUCCESS, payload: res.data }))
-        .catch(err => dispatch({ type: TRANSFORM_VALUE_ERROR, payload: err }))
+        .then(res => dispatch({ type: TRANSFORM_VALUE_SUCCESS, payload: res.data, mode: mode }))
+        .catch(err => dispatch({ type: TRANSFORM_VALUE_ERROR, payload: err, mode: mode }))
 }
 
 export const transformToLowerCase = input => transformText(input)

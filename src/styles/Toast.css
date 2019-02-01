@@ -7,14 +7,27 @@
 .successToast {
     background-color: green;
     color: white;
+    animation: AnimateToast 5s ease-in forwards;
 }
 
 .failureToast {
     background-color: red;
     color: white;
+    animation: AnimateToast 5s ease-in forwards;
 }
 
 .loadingToast {
     background-color: lightblue;
     color: white;
+    animation: AnimateToast 5s ease-in forwards;
+}
+
+@keyframes AnimateToast {
+    0% {
+        visibility: visible;
+    }
+
+    100% {
+        visibility: hidden;
+    }
 }
