@@ -33,9 +33,11 @@ export default class TextTransformer extends Component {
                 <form onSubmit={this.handleSubmit}>
                     <input value={currentValue} type="text" placeholder="Enter text to transform"
                            onChange={this.handleChange}/>
-                    <button type="submit">Transform Text</button>
+                    <button type="submit" disabled={this.state.currentValue === ''}>Transform Text</button>
                 </form>
-                <p className="mt-4">Transformed Text: {transformedValue}</p>
+                <p className={`mt-4 ${transformedValue === '' ? 'd-none' : 'd-block'}`}>
+                    Transformed Text: {transformedValue}
+                </p>
                 <Toast/>
             </div>
         )
